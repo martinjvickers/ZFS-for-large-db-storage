@@ -58,4 +58,11 @@ config:
 errors: No known data errors
 ```
 
-#### 
+#### Set compression
+
+```
+ubuntu@ip-172-31-35-70:~$ sudo zfs set compression=lz4 database
+ubuntu@ip-172-31-35-70:~$ sudo zfs get compressratio database
+NAME      PROPERTY       VALUE  SOURCE
+database  compressratio  1.00x  -
+```
