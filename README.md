@@ -69,6 +69,8 @@ database  compressratio  1.00x  -
 
 #### Set deduplication
 
+I'm not sure if this is the best idea at this point since dedup requires a huge amount of RAM.
+
 ```
 ubuntu@ip-172-31-35-70:~$ sudo zfs set dedup=on database
 ubuntu@ip-172-31-35-70:~$ sudo zfs get compressratio database
